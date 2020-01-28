@@ -6,5 +6,5 @@ COPY . /mrcnn/
 
 RUN pip install -r requirements.txt && python3 setup.py install && \
     curl -LO https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5 && \
-    cd cocoapi/PythonAPI && python3 setup.py install
+    cd cocoapi*/PythonAPI && python3 setup.py install
 
